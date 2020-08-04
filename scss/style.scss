@@ -156,6 +156,7 @@ body {
     
     background-color: $grey;
     z-index: 1;
+
     &_div {
         min-height: 80px;
         height: 100%;
@@ -183,7 +184,10 @@ body {
         letter-spacing: 0.75px;
 
         
-        
+        li{
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
 
         & li a {   
            
@@ -199,10 +203,10 @@ body {
             margin: 0;
         }
         
-        li:hover {
+        span:hover {
             text-decoration: underline;
         }
-        z-index: 1;
+     
     }
 
     
@@ -231,7 +235,7 @@ body {
     margin-top: 30px;
     margin-bottom: 195px;
     width: 100%;
-    min-height: 786px;
+    min-height: auto;
     height: auto;
 
     &__news {
@@ -320,8 +324,6 @@ body {
         .company__text {
             margin-bottom: 34px;
         }
-
-        // Style for "Компания «"
         width: 575px;
         height: 493px;
         color: #767676;
@@ -352,7 +354,6 @@ body {
 
     &__company {
         flex-direction: row;
-        /* Style for "© 2012–201" */
         width: 200px;
         height: 35px;
         color: #ffffff;
@@ -360,7 +361,6 @@ body {
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
-        /* Text style for "© 2012–201" */
         letter-spacing: 0.35px;
     }
 
@@ -371,7 +371,6 @@ body {
         width: 119px;
         li a {
             color: #ffffff;
-            /* Style for "Главная Ка" */
         width: 119px;
         height: 117px;
         color: #ffffff;
@@ -381,7 +380,6 @@ body {
         line-height: 26px;
         text-decoration: none;
         border-bottom: 1px solid #ffffff;
-        /* Text style for "Главная ," */
         letter-spacing: 0.35px;
         }
     }
@@ -406,10 +404,6 @@ body {
             height: 100%;
             margin-left: 9px;
             margin-top: -6px;
-            
-            &_p {
-                
-            }
         }
     }
 }
