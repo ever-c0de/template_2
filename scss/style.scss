@@ -153,37 +153,45 @@ body {
 
 .menu {
     min-width: 1000px;
-    height: 80px;
-
     
     background-color: $grey;
-
     z-index: 1;
-
     &_div {
+        min-height: 80px;
         height: 100%;
         width: 1000px;
+        
         margin: 0 auto;
         padding: 0 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     &__bar {
+        
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: fit-content;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+
+        color: #ffffff;
+        font-family: "PT Sans";
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.75px;
 
         
         
 
         & li a {   
-            
+           
             &::after {
                 content: "|";
                 margin: 0px 22px;
             }
+            
         }
 
         & li:last-child a::after {
@@ -194,7 +202,6 @@ body {
         li:hover {
             text-decoration: underline;
         }
-
         z-index: 1;
     }
 
