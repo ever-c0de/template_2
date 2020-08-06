@@ -353,7 +353,8 @@ body {
         &_content{
             width: 100%;
             .items {
-                
+                margin-right: 22px;
+                width: 180px;
                 .tehnika:hover{
                     .list{
                         position: relative;
@@ -416,11 +417,6 @@ body {
                 }
             }
         }
-
-        .archive {
-            color: #ffffff;
-            float: right;
-        } 
     }
     &__company {
         margin-left: auto;
@@ -428,22 +424,29 @@ body {
         flex-flow: row wrap;
         justify-content: flex-start;
 
-        &__block{
-            &:nth-child(3n+1), &:first-child {
-                margin-left: 0;
-              }
-        background-color: $grey;
-        width: 250px;
-        height: 380px;
-            
-            img{
-            width: 210px;
-            height: 209px;
-        }
-
-        }
     }
     
+}
+
+.blocks__block{
+    
+    
+    &:nth-child(3n+1), &:first-child {
+        margin-left: 0;
+      }
+    background-color: $grey;
+    width: 250px;
+    height: 380px;
+    
+    img{
+    width: 210px;
+    height: 209px;
+    }
+
+    .blocks__block_icon{
+        width: 28px;
+        height: 21px;
+    }
 }
 
 .footer {
