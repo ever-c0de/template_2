@@ -320,7 +320,7 @@ body {
 
         &::after {
             content: "/";
-            margin: 0px 5px;
+            margin: 0px 8px;
             color: $grey;
         }
     }
@@ -353,7 +353,7 @@ body {
         &_content{
             width: 100%;
             .items {
-                margin-right: 22px;
+                margin-right: 16px;
                 width: 180px;
                 .tehnika:hover{
                     .list{
@@ -419,6 +419,7 @@ body {
         }
     }
     &__company {
+        
         margin-left: auto;
         display: flex;
         flex-flow: row wrap;
@@ -429,16 +430,31 @@ body {
 }
 
 .blocks__block{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 17px;
+    margin-bottom: 20px;
     
     &:nth-child(3n+1), &:first-child {
         margin-left: 0;
       }
-    background-color: $grey;
+    
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+    
+
+    background-color: #dcdcdc;
     width: 250px;
     height: 380px;
+    p a{
+        color: $grey;
+        text-decoration: none;
+    }
     
-    img{
+    .sell{
+    margin-top: 20px;
     width: 210px;
     height: 209px;
     }
