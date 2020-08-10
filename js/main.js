@@ -21,5 +21,25 @@ $(document).ready(function(){
     });
 });
     
-/* // */
+/* /Slider section */
 
+/* Form section */
+
+let fb = document.getElementsByClassName('frame');
+fb[0].style.display = "none";
+let f = document.getElementsByClassName('form');
+fb[0].style.display = "none";
+
+function show() {
+    fb[0].style.display = "flex";
+  }
+
+
+function hide() {
+    fb[0].style.display = "none";
+}
+
+
+
+document.getElementsByClassName('feedback')[0].onclick = function() {show()};
+document.getElementsByClassName('exit')[0].onclick = function() {hide()};

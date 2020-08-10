@@ -258,7 +258,7 @@ body {
     &-arrow{
     position: absolute;
     top: 45%;
-    z-index: 10000;
+    z-index: 1000;
     font-size: 0;
 
     width: 34px;
@@ -342,10 +342,32 @@ body {
 
     &__inner {
         display: flex;
+        position: relative;
+    }
+    .bottom_scrol{
+        white-space: nowrap;
+        position: absolute;
+        bottom: -20px;
+        left: 502px;
+        width: 174px;
+        height: 13px;
+        color: #767676;
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+
+        letter-spacing: 7.91px;
+
+    span{
+        color: #444444;
+        font-size: 18px;
+        letter-spacing: 10.17px;
+        }
     }
 
     &__items {
-        
+        position: relative;
         height: auto;
         color: $grey;
 
@@ -411,6 +433,43 @@ body {
                         text-decoration: none;
                     }
                 }
+            }
+        }
+        .logo-left{
+            position: absolute;
+            top: 365px;
+            left: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 156px;
+            height: 144px;
+            
+            img{
+                width: 97px;
+                height: 111px;
+            }
+
+            .text-logo-left{
+                text-decoration: none;
+                color: #444444;
+                font-family: "PT Sans";
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 25px;
+                letter-spacing: 0.75px;
+            }
+
+            a{
+                
+                text-decoration: none;
+                color: #444444;
+                font-family: "PT Sans";
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 25px;
+                letter-spacing: 0.75px;
             }
         }
     }
@@ -485,7 +544,7 @@ body {
         bottom: 14px;
         z-index: 1;
         
-        width: 103px;
+        width: 115px;
         height: 26px;
         color: #444444;
         font-family: "PT Sans";
@@ -494,6 +553,32 @@ body {
         line-height: 18px;
         letter-spacing: 0.7px;
     }
+}
+
+.bottom_text{
+    
+}
+
+.bottom_some_text{
+    &_1{
+        width: 371px;
+        height: 168px;
+    }
+
+    &_2{
+        width: 368px;
+        height: 212px;
+    }
+    /* Style for "Компания «" */
+width: 371px;
+height: 168px;
+color: #767676;
+font-family: "PT Sans";
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+/* Text style for "Компания «" */
+letter-spacing: 0.35px;
 }
 
 .footer {
@@ -565,9 +650,101 @@ body {
             margin-left: 9px;
             margin-top: -6px;
         }
+    }  
+}
+.frame{
+    display: none;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    .exit{
+        display: none;
+        opacity: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(233px,-316px);
+        border: none;
+        padding: 0;
+        width: 27px;
+        height: 27px;
+    }
+
+
+    .form {
+       opacity: 0;
+        position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-233px,-289px);
+       width: 466px;
+       height: 578px;
+       padding: 0 10px;
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       background-color: #ffffff;
+       -webkit-transform: translate(-233px,-289px);
+       -moz-transform: translate(-233px,-289px);
+       -ms-transform: translate(-233px,-289px);
+       -o-transform: translate(-233px,-289px);
+                  
+       h1{
+        width: 186px;
+        height: 17px;
+        color: #535353;
+        font-family: "PT Sans";
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        margin-top: 35px;
+        margin-bottom: 35px;
+        }
+
+        label{
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "PT Sans";
+        color: #535353;
+        margin-bottom: 3px;
+        }
+
+        input{
+        width: 339px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: 1px solid #c3c3c3;
+        padding: 0 10px;
+        }
+
+        textarea{
+        width: 339px;
+        height: 140px;
+        border: 1px solid #c3c3c3;
+        background-color: #ffffff;
+        resize: none;
+        margin-bottom: 22px;
+        }
+
+        button{
+        width: 128px;
+        height: 42px;
+        background-color: $grey;
+        border: none;
+
+        color: #ffffff;
+        font-family: "PT Sans";
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        }
     }
 }
-
 
 
 
