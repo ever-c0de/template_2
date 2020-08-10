@@ -335,7 +335,7 @@ body {
 /* Block section */
 
 .blocks {
-    margin-bottom: 195px;
+    margin-bottom: 107px;
     width: 100%;
     min-height: auto;
     height: auto;
@@ -556,29 +556,48 @@ body {
 }
 
 .bottom_text{
+    margin-bottom: 207px;
+    margin-left: 190px;
+}
+
+.my_wrapper_text{
+    border-top: 1px solid $grey;
+    padding-top: 29px;
     
 }
 
+.container_here{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 .bottom_some_text{
     &_1{
-        width: 371px;
+        width: 372px;
         height: 168px;
+
+        color: $grey;
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.35px;
     }
 
     &_2{
-        width: 368px;
+        float: right;
+        width: 371px;
         height: 212px;
+        color: #767676;
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.35px;
     }
-    /* Style for "Компания «" */
-width: 371px;
-height: 168px;
-color: #767676;
-font-family: "PT Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-/* Text style for "Компания «" */
-letter-spacing: 0.35px;
+
+    
+    
 }
 
 .footer {
