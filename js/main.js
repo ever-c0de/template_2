@@ -27,19 +27,49 @@ $(document).ready(function(){
 
 let fb = document.getElementsByClassName('frame');
 fb[0].style.display = "none";
-let f = document.getElementsByClassName('form');
-fb[0].style.display = "none";
 
 function show() {
     fb[0].style.display = "flex";
+    setTimeout(()=>fb[0].classList.remove('transperency_1'),50);
   }
 
 
 function hide() {
-    fb[0].style.display = "none";
+    fb[0].classList.add('transperency_1');
+    setTimeout(()=>fb[0].style.display = "none",1050);
 }
 
 
 
 document.getElementsByClassName('feedback')[0].onclick = function() {show()};
 document.getElementsByClassName('exit')[0].onclick = function() {hide()};
+
+/* Form Validation */
+let form = document.querySelector('.form');
+
+let fields = form.querySelectorAll('.field');
+
+let validateBtn = form.querySelector('.formButton');
+
+console.log(fields);
+form.addEventListener('submit', function () {
+    event.preventDefault()
+
+    for (var i = 0; i < fields.length; i++) {
+        if (!fields[i].value) {
+          console.log('field is blank', fields[i])
+          //Виведення помилки
+          fields[i].classList.add('error')
+
+          fields[i].placeholder='Поле обязательно для заполнения'
+        }
+      }
+  });
+  
+  for (let item of fields){
+    item.addEventListener('focus', function(event) {
+        event.target.classList.remove('error');
+        event.target.placeholder = '';
+    })
+    
+}
