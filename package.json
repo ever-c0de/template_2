@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.12",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-beautify": "*",
@@ -17,5 +17,4 @@
     "jshint": "^2.9.6",
     "main-bower-files": "*"
   }
-  
 }

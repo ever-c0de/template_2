@@ -277,12 +277,12 @@ body {
 
         &.slick {
             &-prev {
-                margin-left: -500px;
+                margin-left: -490px;
                 background: url('../images/arrow_left.png') 0 0 no-repeat;
             }
 
             &-next {
-                margin-left: 425px;
+                margin-left: 410px;
                 background: url('../images/arrow_right.png') 0 0 no-repeat;
             }
         }
@@ -358,8 +358,8 @@ body {
     .bottom_scrol {
         white-space: nowrap;
         position: absolute;
-        bottom: -20px;
-        left: 502px;
+        bottom: 269px;
+        left: 304px;
         width: 174px;
         height: 13px;
         color: #767676;
@@ -379,11 +379,12 @@ body {
 
     &__items {
         position: relative;
-        height: auto;
         color: $grey;
 
         &_content {
             width: 100%;
+            min-height: 270px;
+
 
             .items {
                 margin-right: 16px;
@@ -453,9 +454,11 @@ body {
         }
 
         .logo-left {
-            position: absolute;
-            top: 365px;
-            left: 15px;
+            // position: absolute;
+            // top: 365px;
+            // left: 15px;
+            margin-top: 95px;
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -492,6 +495,7 @@ body {
     }
 
     &__company {
+        height: fit-content;
         margin: 0 0 0 auto;
         width: 785px;
         display: flex;
@@ -517,7 +521,8 @@ body {
 
     &:nth-child(3n+1),
     &:first-child {
-        margin-left: 0;
+        margin-left: 0px;
+        margin-top: 0px;
     }
 
     &:nth-child(3),
@@ -577,11 +582,13 @@ body {
 }
 
 .bottom_text {
-    margin-bottom: 207px;
-    margin-left: 190px;
+    margin-top: 89px;
+    margin-bottom: 89px;
+
 }
 
 .my_wrapper_text {
+    position: relative;
     border-top: 1px solid $grey;
     padding-top: 29px;
 
@@ -590,7 +597,7 @@ body {
 .container_here {
     width: 800px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding-right: 16px;
 }
 
 .bottom_some_text {
@@ -811,6 +818,3 @@ body {
 
     }
 }
-
-
-
