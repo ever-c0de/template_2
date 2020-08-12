@@ -379,11 +379,14 @@ body {
 
     &__items {
         position: relative;
+
         color: $grey;
 
         &_content {
             width: 100%;
+
             min-height: 270px;
+
 
 
             .items {
@@ -458,7 +461,6 @@ body {
             // top: 365px;
             // left: 15px;
             margin-top: 95px;
-
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -589,6 +591,7 @@ body {
 
 .my_wrapper_text {
     position: relative;
+
     border-top: 1px solid $grey;
     padding-top: 29px;
 
@@ -598,6 +601,7 @@ body {
     width: 793px;
     margin: 0 auto;
     padding-right: 15px;
+
 }
 
 .bottom_some_text {
@@ -817,4 +821,5 @@ body {
         font-style: italic;
 
     }
+
 }

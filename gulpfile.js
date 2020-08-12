@@ -1,4 +1,6 @@
+
 /rest/ /*global -$ */
+
 'use strict';
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -49,6 +51,7 @@ gulp.task('sass', function () {
   //   message: "Your CSS files are ready",
   //   onLast: true
   // }));
+
 });
 
 // Process JS files and return the stream.
